@@ -1,0 +1,28 @@
+.column-group {
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+.column {
+	float: left;
+	margin-right: 10%;
+	width: 100%;
+}
+
+.column-group > br,
+.column-group > p {
+	display: none;
+}
+
+.column.last {
+	margin-right: 0;
+}
+
+.columns-2 .column { width: 45%; } /* ( 100 - $margin * ( $num_cols - 1 ) ) / $num_cols */
+.columns-3 .column { width: 26.666666666%; }
+.columns-4 .column { width: 17.5%; }
+
+.columns-3 .column-span-2 { width: 63.3333333%; } /* $width * $span + $margin * ( $span - 1 ) */
+.columns-4 .column-span-2 { width: 45%; }
+.columns-4 .column-span-3 { width: 72.2%; }
