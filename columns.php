@@ -28,7 +28,7 @@ class Columns_Plugin {
 		$attr['span'] = absint( $attr['span'] );
 		$this->span[ $this->current_group ] += $attr['span'];
 
-		return sprintf( '<div class="column column-number-%d column-span-%d">%s</div>', $this->span[ $this->current_group ], $attr['span'], $content );
+		return sprintf( '<div class="column column-number-%d column-span-%d">%s</div>', $this->span[ $this->current_group ], $attr['span'], wpautop( $content ) );
 	}
 
 	function group( $attr, $content ) {
