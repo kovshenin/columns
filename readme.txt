@@ -2,7 +2,7 @@
 Contributors: kovshenin
 Donate Link: http://kovshenin.com/beer/
 Tags: columns, shortcode
-Requires at least: 3.4
+Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: 0.7
 License: GPLv2 or later
@@ -33,9 +33,15 @@ The firt column will be twice as large as the second or third.
 
 Styles are in columns.css. If you'd like your own margins and stuff, dequeue the columns.css style during `wp_enqueue_scripts` with a priority of 11 or more.
 
+== Installation ==
+
+1. Download archive and unzip in wp-content/plugins or install via Plugins - Add New.
+1. Start using the `[column-group]` and `[column]` shortcodes.
+
 == Screenshots ==
 
 1. Columns demo
+2. This is how things look in the editor
 
 == Changelog ==
 

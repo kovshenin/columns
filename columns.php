@@ -1,8 +1,12 @@
 <?php
 /**
  * Plugin Name: Columns
+ * Plugin URI: http://wordpress.org/extend/plugins/columns/
  * Description: Use a [column] shortcode inside a [column-group] to create magic.
  * Author: Konstantin Kovshenin
+ * Author URI: http://kovshenin.com
+ * License: GPLv2 or later
+ * Version: 0.7
  */
 
 class Columns_Plugin {
