@@ -4,7 +4,7 @@ Donate Link: http://kovshenin.com/beer/
 Tags: columns, shortcode
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 0.7
+Stable tag: 0.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,10 @@ Styles are in columns.css. If you'd like your own margins and stuff, dequeue the
 2. This is how things look in the editor
 
 == Changelog ==
+
+= 0.7.1 =
+* Clear floats after column group
+* Allow other shortcodes inside column contents
 
 = 0.7 =
 * First version
