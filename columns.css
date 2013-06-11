@@ -1,7 +1,6 @@
 .column-group {
-	float: left;
 	width: 100%;
-	clear: both;
+	overflow: hidden;
 }
 
 .column {
