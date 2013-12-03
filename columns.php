@@ -6,7 +6,7 @@
  * Author: Konstantin Kovshenin
  * Author URI: http://kovshenin.com
  * License: GPLv2 or later
- * Version: 0.7.1
+ * Version: 0.7.2
  */
 
 class Columns_Plugin {
@@ -32,11 +32,13 @@ class Columns_Plugin {
 		$attr['span'] = absint( $attr['span'] );
 		$this->span[ $this->current_group ] += $attr['span'];
 
+		$content = wpautop( $content );
+
 		// Allow other shortcodes inside the column content.
 		if ( false !== strpos( $content, '[' ) )
-			$content = do_shortcode( $content );
+			$content = do_shortcode( shortcode_unautop( $content ) );
 
-		return sprintf( '<div class="column column-number-%d column-span-%d">%s</div>', $this->span[ $this->current_group ], $attr['span'], wpautop( $content ) );
+		return sprintf( '<div class="column column-number-%d column-span-%d">%s</div>', $this->span[ $this->current_group ], $attr['span'], $content );
 	}
 
 	function group( $attr, $content ) {
